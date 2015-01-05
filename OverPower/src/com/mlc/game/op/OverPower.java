@@ -7,6 +7,7 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 
 import com.mlc.game.op.tabletop.OppCharsPanel;
+import com.mlc.game.op.tabletop.OppMissionsPanel;
 import com.mlc.game.op.tabletop.Tabletop;
 
 public class OverPower {	
@@ -14,9 +15,9 @@ public class OverPower {
 	public static void main(String[] args) {		
 		JFrame table = new JFrame();
 		table.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		table.setLayout(new BorderLayout());
+//		table.setLayout(new BorderLayout());
 				
-		JPanel containerPane = new OppCharsPanel();
+		JPanel containerPane = new Tabletop();
 		table.add(containerPane);
 		table.setLocationByPlatform(true);
 				

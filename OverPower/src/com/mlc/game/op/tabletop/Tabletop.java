@@ -6,21 +6,24 @@ import java.awt.*;
 
 
 public class Tabletop extends JPanel {	
-
+	private JPanel event1 = new JPanel();
+	
+	
 	public Tabletop() {
 		setLayout(new GridBagLayout());
 		GridBagConstraints gbc = new GridBagConstraints();
-		
-		JPanel ocp = new OppCharsPanel();
 		gbc.fill = GridBagConstraints.BOTH;
-		gbc.anchor = GridBagConstraints.PAGE_START;
+		gbc.weightx = 0.5;
+		gbc.weighty = 0.5;	
+		
 		gbc.gridx = 0;
 		gbc.gridy = 0;
-		gbc.gridwidth = 3;
-		gbc.gridheight = 4;
-		gbc.weightx = 3;
-		gbc.weighty = 4;
-		add(ocp, gbc);
+		gbc.gridwidth = 48;
+		gbc.gridheight = 33;
+		event1.setBackground(Color.red);
+		add(event1, gbc);
+		
+		
 //		add(new ChatPanel(), BorderLayout.SOUTH);
 	}
 	
