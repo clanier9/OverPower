@@ -23,7 +23,7 @@ public class OpponentPanel extends JPanel {
 		
 		gbc.gridx = 1;
 		gbc.gridy = 0;
-		this.add(new OppCharsPanel(), gbc);
+//		this.add(new OppCharsPanel(), gbc);
 		
 		gbc.gridx = 2;
 		gbc.gridy = 0;
